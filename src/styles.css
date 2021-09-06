@@ -1,4 +1,8 @@
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
     margin: 2em;
@@ -18,6 +22,10 @@ h1, h2 {
 
 h1 {
     text-transform: capitalize;
+}
+
+h3 {
+    margin-top: 2em;
 }
 
 p {
@@ -65,9 +73,6 @@ pre {
     font-family: Lora, Georgia, serif;
 }
 
-* {
-    box-sizing: border-box;
-}
 
 .grid {
     display: grid;
@@ -274,9 +279,49 @@ figcaption {
     font-style: italic;
 }
 
+button {
+    grid-column: 2;
+    justify-self: end;
+    display: block;
+    padding: 0.4em 0.8em;
+    background: #8befff;
+    border: none;
+    border-radius: 0.25em;
+    font-size: 1rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    /*color: var(--blue-black);*/
+}
 
+button:focus {
+    outline: none;
+    background: #96ffe1;
+    box-shadow: 1px 1px 5px #ccc;
+}
 
+table {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
 
+table.styled {
+    border-collapse: collapse;
+    text-align: left;
+    font-family: Avenir, Roboto, Heveltica, sans-serif;
+}
 
+.styled th {
+    text-align: inherit;
+    text-transform: uppercase;
+}
 
+.styled th, .styled td {
+    border: 1px solid #999;
+    padding: 0.5em 0.75rem 0.2em;
+    vertical-align: top;
+}
 
+.styled img {
+    max-width: 100%;
+    height: auto;
+}

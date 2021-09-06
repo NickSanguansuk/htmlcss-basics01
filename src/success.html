@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>success</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<main>
+    <article>
+        <p>< <a href="index.html">Back to Home</a></p>
+        <h1>Success!</h1>
+        <p>This is success page</p>
+        <p>Thanks for signing up for our newsletter.</p>
+        <p id="signup"></p>
+
+        <script>
+            const resultsList = document.getElementById('signup')
+            new URLSearchParams(window.location.search).forEach((value,name) => {
+                resultsList.append(`${name}: ${value}`)
+                resultsList.append(document.createElement('br'))
+            })
+        </script>
+    </article>
+</main>
+</body>
+</html>
