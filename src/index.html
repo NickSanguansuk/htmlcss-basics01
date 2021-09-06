@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -337,6 +337,72 @@ li {
              height="360px" width="480px"
              id="dog_picture_5">
     </picture>
+
+    <!-- ---------- ---------- ---------- ---------- ---------- -->
+    <!-- [_ Chapter 6 _] -->
+
+    <!-- ---------- -->
+    <!-- audio -->
+    <!--<audio controls src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/birds.mp3" loop autoplay></audio>-->
+    <audio controls src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/birds.mp3" loop></audio>
+
+    <!--<audio controls loop autoplay>-->
+    <audio controls loop>
+        <source
+                src="https://example.com/birds.ogg"
+                type="audio/ogg; codec=opus">
+        <source
+                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/birds.mp3"
+                type="audio/mpeg">
+        Sorry your browser does not support audio.
+    </audio>
+
+    <!-- ---------- -->
+    <!-- video -->
+    <video controls>
+        <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/moonwalk.480p.vp9.webm"
+                type="video/webm">
+        <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/moonwalk.480p.h264.mp4"
+                type="video/mp4">
+    </video>
+
+    <video controls>
+        <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/moonwalk.480p.vp9.webm"
+                type="video/webm">
+        <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/moonwalk.480p.h264.mp4"
+                type="video/mp4">
+
+        <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/moonwalk.vtt"
+               kind="captions"
+               label="English"
+               srclang="en"
+               default>
+
+        <track src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/moonwalk.es-la.es.vtt"
+               kind="subtitles"
+               label="Español"
+               srclang="es">
+
+        <p>This would be a video of a moonwalk, if your device supported playing this video.</p>
+    </video>
+
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tGykfkLK2hU"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+    <!-- ---------- ---------- ---------- ---------- ---------- -->
+    <!-- [_ Chapter 7 _] -->
+
+    <!-- ---------- -->
+    <!-- Supporting languages -->
+    <div class="box">
+        <p>The first paragraph.</p>
+        <p>Some text in a second paragraph.</p>
+        <p>Third paragraph. <span lang="es" class="bilingual">Esta oración está en español.</span> Some of this text is
+            in another language.</p>
+        <p>Fourth paragraph.</p>
+    </div>
 
 
 </article>

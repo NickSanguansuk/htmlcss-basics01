@@ -265,6 +265,14 @@ figcaption {
     font-style: italic;
 }
 
+.box {
+    background-color: white;
+    padding: 0.1em 1em;
+}
+
+.bilingual {
+    font-style: italic;
+}
 
 
 
