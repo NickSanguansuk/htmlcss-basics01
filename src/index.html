@@ -268,9 +268,9 @@ li {
 
     <nav role="breadcrumb">
         <ol class="breadcrumbs">
-            <li><a href="/">Home</a></li>
-            <li><a href="/people">Blog</a></li>
-            <li><a href="/contact">March</a></li>
+            <li><a href="/src/">Home</a></li>
+            <li><a href="/src/people">Blog</a></li>
+            <li><a href="/src/contact">March</a></li>
             <li>March 9th Update</li>
         </ol>
     </nav>
@@ -284,10 +284,60 @@ li {
     <!-- [_ Chapter 5 _] -->
 
     <!-- ---------- -->
-    <!-- images -->
+    <!-- img -->
+    <figure>
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/maggie2.png" width="960" height="720"
+             alt="shiny black dog in the sun">
+        <figcaption>Maggie the dog enjoys resting in a field, after a long day of chasing squirrels.</figcaption>
+    </figure>
 
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-480.jpg"
+         alt="shiny black dog looking pensive"
+         width="480" height="360"
 
-    
+         srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-960.jpg 2x,
+	   	  	    https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-1440.jpg 3x,
+		 	    https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-1920.jpg 4x"
+    >
+
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-480.jpg"
+         alt="shiny black dog looking pensive"
+         width="480" height="360"
+         srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-480.jpg  480w,
+	   	  	    https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-960.jpg  960w,
+	   	  	    https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-1440.jpg 1440w,
+		 	    https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog-1920.jpg 1920w"
+         id="dog_picture_3"
+    >
+
+    <picture>
+        <source media="(min-width:600px)"
+                srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-720.jpg">
+        <source srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-cropped-320.jpg">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-480.jpg"
+             width="480" height="360"
+             alt="black dog lying in the sun"
+             id="dog_picture_4">
+    </picture>
+
+    <picture>
+        <source media="(min-width:600px)"
+                srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-320.jpg  320w,
+                        https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-480.jpg  480w,
+                        https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-720.jpg  720w,
+                        https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-960.jpg  960w,
+                        https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-1440.jpg 1440w,
+                        https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-1920.jpg 1920w">
+        <source srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-cropped-320.jpg 320w,
+                        https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-cropped-480.jpg 480w,
+                        https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-cropped-720.jpg 720w,
+                        https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-cropped-960.jpg 960w">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/10558/dog2-480.jpg"
+             alt="smiling black dog"
+             height="360px" width="480px"
+             id="dog_picture_5">
+    </picture>
+
 
 </article>
 </body>
