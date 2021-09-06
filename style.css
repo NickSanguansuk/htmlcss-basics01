@@ -1,0 +1,123 @@
+
+html {
+    font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
+    margin: 2em;
+    font-size: 120%;
+    line-height: 1.5;
+    color: #133;
+}
+
+body {
+    margin: 2rem 1rem 4rem;
+}
+
+h1, h2 {
+    font-weight: normal;
+    margin-bottom: 2em;
+}
+
+h1 {
+    text-transform: capitalize;
+}
+
+p {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-size: 100%;
+}
+
+strong {
+    text-transform: uppercase;
+    font-size: 150%;
+}
+
+blockquote {
+    font-family: georgia, serif;
+    font-size: 100%;
+    font-style: italic;
+    line-height: 1.3;
+    color: teal;
+    border-left: 4px solid #5cb6b6;
+    padding-left: 1rem;
+    margin: 2rem 0.5rem;
+}
+
+cite {
+    font-style: normal;
+    text-align: right;
+    display: block;
+    margin-right: 5rem;
+}
+
+cite::before{
+    content: '— ';
+}
+
+code {
+    color: black;
+    font-size: 130%;
+    padding: 0.05em 0.1em;
+    margin: 0 0.2em;
+    background: #eee;
+}
+
+pre {
+    font-family: Lora, Georgia, serif;
+}
+
+* {box-sizing: border-box;}
+.grid {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 2fr) 1fr 1fr;
+    grid-template-areas:
+    ".  H  E   .   . . "
+    ".  H  E   .   . . "
+    ".  L  .   LH  . . "
+    "WW .  .   .   O O "
+    ".  OO LL  .   . . "
+    "RR .  .   DD  . . ";
+}
+.grid::before {
+    border: 7px solid #f05858;
+    content:' ';
+    grid-column: 2 / 6;
+    grid-row: 2 / 5;
+    width: 100%;
+}
+span:nth-child(1) {
+    grid-area: H;
+}
+span:nth-child(2) {
+    grid-area: E;
+}
+span:nth-child(3) {
+    grid-area: L;
+}
+span:nth-child(4) {
+    grid-area: LH;
+}
+span:nth-child(5) {
+    grid-area: O;
+}
+span:nth-child(6) {
+    grid-area: WW;
+}
+span:nth-child(7) {
+    grid-area: OO;
+}
+span:nth-child(8) {
+    grid-area: RR;
+}
+span:nth-child(9) {
+    grid-area: LL;
+}
+span:nth-child(10) {
+    grid-area: DD;
+}
+
+
+
+
+
+
