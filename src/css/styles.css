@@ -15,9 +15,10 @@ body {
     margin: 2rem 1rem 4rem;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-weight: normal;
     margin-bottom: 2em;
+    background-color: pink;
 }
 
 h1 {
