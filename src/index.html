@@ -13,6 +13,65 @@
     </style>
 </head>
 <body>
+
+<header>
+    <!-- put header context here -->
+</header>
+
+<nav role="navigation" aria-label="main menu">
+    <ul class="navbar">
+        <li><a href="index.html">Home1</a></li>
+        <li><a href="people/">People</a></li>
+        <li><a href="prices/">Prices</a></li>
+        <li><a href="contact/">Contact</a></li>
+    </ul>
+</nav>
+
+<nav role="navigation" aria-label="main menu">
+    <ul class="navbar">
+        <li><a href="">Home2</a></li>
+        <li><a href="people/">People</a></li>
+        <li><a href="prices/">Prices</a></li>
+        <li><a href="contact/">Contact</a></li>
+    </ul>
+</nav>
+
+<nav role="navigation" aria-label="main menu">
+    <ul class="navbar">
+        <li><a href="index.html">Home3</a></li>
+        <li><a href="people/index.html">People</a></li>
+        <li><a href="prices/index.html">Prices</a></li>
+        <li><a href="contact/index.html">Contact</a></li>
+    </ul>
+</nav>
+
+<nav role="navigation" aria-label="main menu">
+    <ul class="navbar">
+        <li><a href=".">Home4</a></li>
+        <li><a href="./people/">People</a></li>
+        <li><a href="./prices/">Prices</a></li>
+        <li><a href="./contact/">Contact</a></li>
+    </ul>
+</nav>
+
+<nav role="navigation" aria-label="main menu">
+    <ul class="navbar">
+        <li><a href="/src/">Home5</a></li>
+        <li><a href="/src/people/">People</a></li>
+        <li><a href="/src/prices/">Prices</a></li>
+        <li><a href="/src/contact/">Contact</a></li>
+    </ul>
+</nav>
+
+<nav role="navigation" aria-label="main menu">
+    <ul class="navbar">
+        <li><a href="/src">Home6</a></li>
+        <li><a href="/src/people">People</a></li>
+        <li><a href="/src/prices">Prices</a></li>
+        <li><a href="/src/contact">Contact</a></li>
+    </ul>
+</nav>
+
 <main>
     <article>
         <!-- ---------- ---------- ---------- ---------- ---------- -->
@@ -275,18 +334,18 @@ li {
         <nav role="navigation" aria-label="main menu">
             <ul class="navbar">
                 <!--<li><a href="/src/">Home</a></li>-->
-                <li><a href="index.html">Home</a></li>
-                <li><a href="/src/people">People</a></li>
-                <li><a href="./prices">Prices</a></li>
-                <li><a href="../src/contact">Contact</a></li>
+                <li><a href="/src">Home</a></li>            <!-- relative file paths, point to the root -->
+                <li><a href="/src/people">People</a></li>   <!-- relative file paths, point to the root -->
+                <li><a href="prices">Prices</a></li>        <!-- relative file paths, in the current folder -->
+                <li><a href="./contact">Contact</a></li>    <!-- relative file paths, in the current folder -->
             </ul>
         </nav>
 
         <nav role="breadcrumb">
             <ol class="breadcrumbs">
-                <li><a href="/src/">Home</a></li>
-                <li><a href="/src/people">Blog</a></li>
-                <li><a href="/src/contact">March</a></li>
+                <li><a href=".">Home</a></li>
+                <li><a href="./people">Blog</a></li>
+                <li><a href="./contact">March</a></li>
                 <li>March 9th Update</li>
             </ol>
         </nav>
@@ -566,11 +625,20 @@ li {
                          height="531"></td>
             </tr>
         </table>
-    </article>
 
-    <aside>
-        <!-- put aside content here -->
-    </aside>
+        <aside>
+            <!-- put aside content here -->
+        </aside>
+    </article>
 </main>
+
+<aside>
+    <!-- put aside content here -->
+</aside>
+
+<footer>
+    <!-- put footer context here -->
+</footer>
+
 </body>
 </html>
