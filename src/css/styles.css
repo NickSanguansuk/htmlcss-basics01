@@ -234,17 +234,17 @@ img {
     margin-right: 1.4rem;
 }
 
-#dog_picture_3 {
+#dog-picture3 {
     width: 100%;
     height: auto;
 }
 
-#dog_picture_4 {
+#dog-picture4 {
     width: 100%;
     height: auto;
 }
 
-#dog_picture_5 {
+#dog-picture5 {
     width: 100%;
     height: auto;
 }
@@ -327,12 +327,12 @@ table.styled {
     height: auto;
 }
 
-#imgProject1 {
+#img-project1 {
     width: 300px;
     padding: 25px;
 }
 
-#imgProject2 {
+#img-project2 {
     width: 300px;
     /*padding: 25px;*/
 }
